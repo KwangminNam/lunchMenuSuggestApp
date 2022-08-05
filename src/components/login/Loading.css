@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 30px;
+}
+.loading{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.loading  img{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: none;
+}
+.circle{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 100%;
+  border: 5px solid red;
+  border-right-color: blue;
+  border-top-color: blue;
+  animation: spins 800ms infinite linear;
+}
+
+@keyframes spins{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(359deg);
+  }
+}
+
+.loginMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 250px;
+}
+
+.wannaJoin{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.wannaJoin > span{
+  font-size: 14px;
+}
+
+.button{
+  background-color: skyblue;
+  color: #222;
+  font-size: 22px;
+  border: none;
+  padding: 20px 0;
+  width: 100%;
+}
+
+input{
+  width: 100%;
+  padding: 20px 0;
+  outline: none;
+  border: 1px solid #333;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+label{
+  font-size: 20px;
+  font-weight: bold;
+}
